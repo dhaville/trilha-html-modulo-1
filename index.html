@@ -1,0 +1,121 @@
+<html> 
+    <head>
+        <title>Página Principal</title>
+    </head>
+    <body>
+      <h1 id="Início">Formação HTML Web Developer</h1>
+      <hr/>
+      <h2>Primeiros Passos com HTML</h2>
+      <ul>
+        <li><a href="#Client-Server">Entendendo Comunicação <i>Client</i> x <i>Server</i></a></li>
+        <li><a href="#HTML-na-Pratica">Introdução ao HTML na Prática</a></li>
+        <li><a href="#Referencias">Referências Bibliográficas</a></li>
+      </ul>
+      <h2 id="Client-Server"><strong>Entendendo Comunicação <i>Client</i> x <i>Server</i></strong></h2>
+      <ol>
+        <li><a href="#Historia">História da Web</a></li>
+        <li><a href="#Clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#Server">O que são <i>Servers</i>?</a></li>
+        <li><a href="#Linguagens">Sobre Linguagens de Programação Web</a></li>
+      </ol>
+      <h3 id="Historia">História da Web</h3>
+      <small><a href="#Início">Início</a></small>
+      <p>
+        A história da computação - não da web - tem seu início durante a Segunda Guerra Mundial, em 1944, quando surgiu a 1ª geração de computadores. Inicialmente os computadores eram gigantes, estáticos, possuíam funcionamento eletromecânico, repletoS de metais e com poucas pessoas capazes para operacionalizá-lo e interpretá-lo. Sem a existência da internet, essas máquinas eram utilizadas unicamente para cálculos estratégicos e depois foram sendo melhores desenvolvidas, adquirindo também, posteriormente, a função de comunicação.
+      </p>
+      <p> 
+        Na 1ª geração (1944 - 1958) podemos destacar os computadores Harvard Mark I (1944), Colossus e ENIAC (1946). Na 2ª geração (1959 - 1965), destacamos a diminuição dos tamanhos das máquinas e a existência de transitores. Na 3ª geração (1965 - 1970) há tela e teclado e, a grande inovação, conexão em rede. A 4ª geração (iniciada em 1971) traz computadores portáteis, mouse, luzes nos cabinetes e smartphones. Há ainda debates em torno do tema alegando que já estamos vivendo a 5ª geração de computadores que é composta, além de outras características, por AI, metaverso e moedas digitais.
+      </p> 
+        Dentro do contexto dos computadores, surge então a internet que é o meio pelo qual um computador é ligado à uma rede mundial contendo outros computadores, enviando e obtendo informações e estabelecendo comunicação. Seu surgimento é repleto de desafios e barreiras, mas seu desenvolvimento é potencializado diante desses mesmsos desafios e barreiras. Tal desenvolvimento fez com que ageências e departamentos fossem criados unicamente voltados à tecnologia de informações (DARPA e Arpanet) e, aqui, surgem nomes importantes para o avanço desta tecnologia, tais como Joseph Carl Robnett Licklider, Vinton Cerf, Robert Kahn e Tim Berners-Lee. Outro nomes também se destacam nos avanços tecnológicos como os de Marc Andreessen, Bill Gates e Steve Jobs. Há ainda um destaque memorável a <mark>Grace Murray Hopper</mark>, uma das primeiras programadoras do Mark I.
+      </p>
+      <h3 id="Clients">O que são <i>Clients</i>?</h3>
+      <small><a href="#Início">Início</a></small>
+      <p>
+        A grosso modo, <i>Clients</i> são os usuários de computadores que solicitam informações - via internet -, cujo tais informaçãos são requisitada em um <i><a id href="#Server">Server</a></i> que retornará a busca com o desejado pelo usuário. Essas informaçãos são retornadas por documentos denominados de <a href="#Cache">Cache</a> <sup>1</sup> que podem conter imagens, HTMLS, CSS, Javascript, entre outros. A leitura desses documentos, pelo <i>Client</i>, só é possível devido aos <i>browser's </i>, ou "navegadores", que comulmente já estão pré-instalados em um computador. Além disso, os navegadores seguem um padrão, tendo diferenças em detalhes que não implicam na leitura dos arquivos. Há ainda as aplicações web que auxiliam nessa comunicação entre <i>Client</i> e <i>Server</i>.
+        <blockquote>
+          "A aplicação web diz respeito a uma solução que é executada diretamente no browser (ou navegador), não sendo preciso realizar uma instalação na máquina do usuário. Pode-se, também, utilizar como definição 'tudo aquilo que é processado em um servidor terceiro'." (Cairo Noleto)
+        </blockquote>
+      </p>
+      <p>
+        Na atualidade, podemos também relacionar como ferramenta de acesso à informação - pelo <i>Client</i> - os dispositivos móveis (notebooks, tablets, smartphones e smartwatchs). Os dispositivos móveis já são bastante utilizados e costumam possuir a vantagem da praticidade. A possibilidade de acessar uma determinada página na web de qualquer lugar é um dos princípais benefícios.
+      </p>
+      <h3 id="Server">O que são <i>Servers</i>?</h3>
+      <small><a href="#Início">Início</a></small>
+      <p>
+        O <i>"Client"</i> não existe sozinho. Ele é o requisitante. Mas, para que a requisição do <i>Client</i> seja completada com sucesso, o que ele deseja obter precisa buscar a informação em um repositório. Esses repositórios são os ambientes que possuem a informação que será disponibilizada, ou seja, o <i>Server</i>. A conexão com o <i>Server</i> pode ser externa, através da internet, mas também pode ser interna, dentro de uma organização, por exemplo, e essa conexão é realizada através de rede local denominada LAN - <i>Local Area Network</i>. Diferentemente do <i>Client</i> que é utilizado por um único usuário, os <i>Servers</i> podem ser acessado de vários <i>Clients</i> simultaneamente.
+      </p>
+      <p>
+        Os servidores podem ser de arquivos, segurança (<i>Firewall</i>), <i>streaming</i>, e-mail ou web. Cada servidor é composto por <i>Softwares</i> - que são sistemas operacionais, monitoramento e servidores web -, e por <i>Hardwares</i> - que englobam os armazenamentos (discos rígidos, SSDs), memória e processadores. Sabendo-se disso, é importante também entender que o servidor possui um sistema operacional e, nesse sistema operacional é instalado um Servidor Web que vai atender a requisição dos dados desejados pelo <i>Client</i>. Dentre os sistemas operacionais mais conhecidos estão o Windows Server, Ubuntu, CentOS, Debian, Fedora e o Oracle Linux. Já entre os servidores web - que são instalados nos sistemas operacionais - há o APACHE e o NGINX.
+      </p>
+      <p>
+        Ampliando um pouco mais o assunto sobre os tipos de servidores, existe o <i>proxy</i> - servidor responsável por restringir o acesso a sites maliciosos ou proibidos em uma determinada rede. Este servidor também pode servir como servidor de autenticação, onde o usuário precisará digitar seu login e senha e o servidor buscará as informações da web. Outro tipo de servidor é o <i>Firewall</i>, que é um servidor de segurança, mas voltado à acessos externos, onde o mesmo realiza o bloqueio de tentativas de conexões maliciosas. O <i>Web Server</i> e o <i>E-mail Server</i> são servidores que possuem funções de armazenamentos de dados sendo que um armazena sites e o outro e-mails, respectivamente. O <i>Database Server</i> é o servidor que possui o banco de dados onde um outro servidor, em que a aplicação está instalada, faz a requisição dos dados solicitados, podendo ser através da internet - com conexão externa - ou sem acesso a internet - por um site interno, em rede corporativa - denominado de <strong><u>Intranet</u></strong>. Por fim, há ainda o servidor <i>DNS - Domain Name Service</i>, que é um tipo de servidor que detém uma lista de nomes e IP's (registro único de cada site em código numérico) onde, ao usuário fazer uma requisição na web, o DNS busca em sua relação a qual <a href="#tcp-ip">TCP-IP</a> <sup>2</sup> está relacionado o site requisitado e o redireciona a tal.
+      </p>
+      <p>
+        Diante da abordagem principal desta formação, precisamos também aprofundar o conhecimento inerente à DNS ao que diz respeito a hospedagem e domínio de sites. A hospedagem é a disponibilização dos arquivos do seu site em um servidor (próprio ou contratado) que fica na internet para que os <i>Clients</i> possam acessar. Diante dos benefícios, a contratação torna-se viável, pois, a depender do plano de hospedagem, o servidor hospeda inúmeros sites. Outros detalhes possíveis de avaliação nos planos são algumas funcionalidades como a <a href="#multiplataformas">multiplataformas</a> <sup>3</sup>, possibilidade do registro de domínio (DNS), conexões seguras (HTTPS), se também é um servidor web, e-mail e/ou <i>streaming</i>. A avaliação do plano, do seu custo-benefício, dependerá do que o contratante deseja. Já o domínio está relacionado à sua propriedade sobre o nome (marca), e-mail e endereço web na internet. Para isso, é necessário o registro do mesmo desde que haja disponibildade desse nome, ou seja, desde que nenhuma outra pessoa, empresa ou organização já o tenha utilizado. Há um custo para o registro desse domínio e para a sua manuntenção anual, e o mesmo pode ser feito antes mesmo de existir um servidor para a hospedagem, bem como o DNS pode ser configurado posteriormente através do plano de hospedagem (se.com) ou pelo <a href="https://registro.br/" target="_blank" title="Clique aqui e veja o site Registro.br"> Registro.br</a> (se registro brasileiro). Sendo assim, o registro do nome é o primeiro procedimento a ser adotado por quem deseja possuir um site na internet e e-mails corporativos.
+      </p>
+      <p>
+        Após registrar seu nome e configurar o DNS, esse novo site agora precisará ficar disponível para ser acessado na web, e isso é feito através do <i>FTP - File Transfer Protocol</i>. O FTP é uma conexão para a transferências de arquivos - envio e recebimento -, para o servidor que hospeda o site. Ao contratar o plano de hospedagem, o contratante recebe um endereço para a conexão FTP, um usuário e senha. Também é necessário um software para a realização desta conexão FTP, como por exemplo o <a href="#Filezilla"><i>Filezilla</i></a> <sup>4</sup>. Ao utilizar o software com o usuário e senha, é possível enviar os arquivos do novo site. Após finalizar o envio dos arquivos, o novo web site poderá ser transferido para o servidor de hospedagem sendo assim possível acessá-lo.
+      </p>
+      <h3 id="Linguagens">Sobre Linguagens de Programação Web</h3>
+      <small><a href="#Início">Início</a></small>
+      <p>
+        As aplicações web e/ou aplicativos, para serem utilizados pelos <i>Clients</i>, precisam seguir, sobretudo, comandos e regras. Esses comandos e regras precisam ser descritos e a essa descrição chamamos de <strong><u>Linguagem</u></strong>. A linguaguem escrita em softwares que resultaram na funcionalidade das aplicações web e/ou aplicativos.
+        <blockquote>
+          "(...) se refere a um conjunto de regras e instruções que um programador constrói para gerar programas e softwares que serão processados por um computador, dispositivo móvel ou outro equipamento." (Tatyane Mendes)
+        </blockquote>
+      </p>
+      <p>
+        Não há somente uma linguaguem de programação, mas existem as que mais estão sendo utiliadas para desenvolvimentos de projetos e, segundo o <a href="#RedMonk">RedMonk</a> <sup>5</sup>, as 5 linguagens de programação mais utilizadas entre setembro de 2012 e janeiro de 2022 são:
+        <ol>
+          <li>Javascript</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>PHP</li>
+          <li>C#</li>
+        </ol>
+      </p>
+      <p>
+        Apesar do termo linguagem de programação ser genérico, há diferença entre o tipo de linguagem que é utilizada no <i>Server</i> e o que é utilizado no <i>Client</i>. Atualmente, sendo bastante utilizadas nos servidores existem as linguagens Javascript, Java, PHP, C# e Ruby, cada uma com seu modo particular de ser escrita. Para os clientes que utilizam aplicações web - por navegadores -, a que tem sido mais popularmente utilizada é o Javascript, mas há também o HTML e o CSS.
+      </p>
+      <p>
+        Visto que o Javascript opera tanto do lado do servidor quanto do cliente, é importante salientar que é a escrita do código que se dá de forma diferente. Para a execução do que foi escrito é utilizado o mesmo mecanismo dos dois lados, sendo esse mecanismo o <a href="#V8">V8</a> <sup>6</sup>. Para o cliente, onde é utilizado o navegador para consumir os dados, o módulo V8 está integrado ao software do navegador para ler o que foi escrito, no servidor, em Javascript. Por outro lado, no servidor, o V8 utiliza o suporte do <a href="#NodeJS">NodeJS</a> <sup>7</sup>. Em resumo, quem executa de fato o Javascript é o mecanismo V8. E aqui então fica a compreensão do porquê o Javascript tem se destacado como uma das linguagens de programação mais populares.
+      </p>
+      <p>
+        Apesar de o HTML ter sido relacionado, anteriormente, como uma das linguagens de programação utilizadas no lado do <i>Client</i>, há defensores que o define apenas como um arquivo de marcação, que "é aquela projetada para definir e apresentar textos", onde "os elementos são marcados utilizando <a href="#tags">tags</a> que explica o objetivo dessa parte do conteúdo". Basicamente é uma estrutura de texto que o navegador consegue interpretar.
+      </p>
+      <h2 id="HTML-na-Pratica"><strong>Introdução ao HTML na Prática</strong></h2>
+      <p>
+        Para escrever códigos a serem utilizados por navegadores, a quem deseja iniciar no mundo da programação, é indicado a utilização do software <a href="#Visual-Studio-Code">Visual Studio Code</a> <sup>8</sup> e, para os testes de desenvolvimento do projeto, o navegador <a href="#Google-Chrome">Google Chrome</a> <sup>9</sup>, ambos disponíveis gratuitamente. É possível ainda, para o desenvolvimento de projetos em HTML, utilizar editores de textos simples como o Bloco de Notas, Sublime, NotePad++, entre outros. No entanto, no Visual Studio Code existem diversas funcionalidades que potencializam o resultado do projeto, tais como a instalação de plugins e possibilidade de visualização do projeto à medida que este é desenvolvido. Quanto ao navegador, o Google Chrome também possui uma gama de recursos onde é possível analisar o resultado do projeto já desenvolvido, como, por exemplo, o <strong><u>inspetor de elementos</u></strong>, que apresenta como a página consultada foi construída e quais os elementos foram utilizados para a formatação dessa construção.
+      </p>
+      <p>
+        Seguindo a lógica de uma estrutura de redação, onde o texto precisa ter a introdução o desenvolvimento e a conclusão, uma página web (HTML) também possui uma estrutura de configuração a ser seguida afim de que o projeto funcione corretamente. Os elementos principais, essenciais e indispensáveis de uma estrutura básica de página web são:
+        <ul>
+          <li>html: é toda a composição de dados e informações presente no site, sendo elas visíveis ou não ao usuário;</li>
+          <li>head: informações carregadas para o usuário antes da página ser completamente processada, normalmente visíveis na aba do navegador;</li>
+          <li>body: é o corpo de informações do site que são visíveis ao usuário.</li>
+        </ul>
+      </p>
+      <p>
+        Essa estrutura formam as páginas dos sites, com suas diversas abas, sendo a página principal, dentro do projeto, conhecida como <strong><u>index</u></strong>.
+      </p>
+      <p>
+        Certamente, uma página web não se limita apenas à estrutura anteriomente apresentada, mas possui inúmeros outros elementos que auxiliam na funcionalidade, estrutura, organização e disposição dessa página. A esses elementos chamamos de <strong><u>tags</u></strong>. As tags são marcações e instruções de como o conteúdo do site (texto, imagem, vídeos, links) deverão aparecer no navegador quando acessado pelo usuário. Elas são responsáveis por delimitar o que cada código deve executar na página web. Além disso, algumas tags possuem <strong><u>atributos</u></strong> - que são as características das tags, tais como cor, tamanho e espaço. É importante ainda citar que, dentro de um projeto de site que possuirá textos, algumas tags podem ser essenciais, como as que são destinadas à títulos e subtítulos, parágrafos e citações, bem como as que são destinadas à listas - ordenadas ou não - e que, consequentemente, necessitam da tag destinada à itens para funcionar corretamente.
+      </p>
+      <p>Por fim, uma página web é criada para ser - muito - navegada. Nesse sentido, elas precisam gerar a interação com o cliente e tal interação pode ser muito bem fomentada através dos links disponíveis no site. Para tanto, também existem tags específicas para facilitar a navegação dentro do próprio site ou em sites externos.
+      </p>
+      <hr/>
+      <h4 id="Referencias">Referências Bibliográficas</h4>
+      <p id="Cache"><strong><small>Cache</strong> <sup>1</sup>: O cache nada mais é do que um depósito de informações que fica armazenado em uma parte - ou compartimento - de um sistema operacional, seja de smartphones ou de computadores. Entre os arquivos guardados, estão informações e fragmentos de sites visitados com frequência, por exemplo, fazendo com que o sistema acesse mais rapidamente esses dados.</small> Link: <a href="https://canaltech.com.br/software/cache-o-que-e/" target="_blank">https://canaltech.com.br/software/cache-o-que-e/</a></p>
+      <p><strong><small>Aplicação Web: </small></strong><a href="https://blog.betrybe.com/desenvolvimento-web/aplicacoes-web/" target="_blank">https://blog.betrybe.com/desenvolvimento-web/aplicacoes-web/</a></p>
+      <p id ="tcp-ip"><strong><small>TCP-IP</strong> <sup>2</sup>: TCP é o mecanismo que faz toda a definição de como aplicações conseguem criar canais de comunicação através da rede. Também auxilia na quebra em pedaços de uma mensagem que será posteriormente reconstruída antes de chegar a seu destino. Já o IP é o que define o endereço e o caminho do pacote de dados, ou seja, ele garante que as informações cheguem a seu destino correto.</small> Link: <a href="https://tecnoblog.net/responde/o-que-e-tcp-ip/" target="_blank">https://tecnoblog.net/responde/o-que-e-tcp-ip/</a></p>
+      <p id="multiplataformas"><strong><small>Multiplatafoma</strong> <sup>3</sup>: Característica do programa, software ou aplicativo que pode funcionar em várias plataformas (dispositivos) diferentes.</small> Link: <a href="https://www.dicio.com.br/multiplataforma/#:~:text=Significado%20de%20Multiplataforma,dispositivos)%20diferentes%3A%20jogos%20multiplataforma." target="_blank">https://www.dicio.com.br/multiplataforma/#:~:text=Significado%20de%20Multiplataforma,dispositivos)%20diferentes%3A%20jogos%20multiplataforma.</a></p>
+      <p id="Filezilla"><strong><small>Filezilla</strong> <sup>4</sup>: O FileZilla é um aplicativo de código aberto, para Windows, Mac e Linux, recomendado para quem está começando a mexer com internet agora e precisa enviar arquivos para algum servidor através do protocolo FTP (File Transfer Protocol). Com interface completamente amigável, torna-se muito mais fácil realizar o upload de arquivos para o servidor.</small> Link: <a href="https://www.techtudo.com.br/tudo-sobre/filezilla/" target="_blank">https://www.techtudo.com.br/tudo-sobre/filezilla/</a></p>
+      <p><strong><small>Linguagem de programação: </small></strong><a href="https://www.napratica.org.br/linguagem-de-programacao/" target="_blank">https://www.napratica.org.br/linguagem-de-programacao/</a></p>
+      <p id="RedMonk"><strong><small>RedMonk</strong> <sup>5</sup>: A RedMonk é uma empresa de analistas do setor focada em desenvolvedores de software e sediada em Portland, Maine, EUA. Foi fundada na premissa da crescente influência dos desenvolvedores de software na indústria de tecnologia.</small><a href="https://pt.wikipedia.org/wiki/RedMonk" target="_blank">https://pt.wikipedia.org/wiki/RedMonk</a></p>
+      <p id="V8"><strong><small>V8</strong> <sup>6</sup>: V8 é o interpretador JavaScript, também chamado de máquina virtual Javascript (ou engine), desenvolvido pela Google e utilizado em seu navegador Google Chrome. V8 é uma ferramenta desenvolvida na linguagem C++ e distribuída no regime de código aberto.</small><a href="https://pt.wikipedia.org/wiki/V8_(JavaScript)" target="_blank">https://pt.wikipedia.org/wiki/V8_(JavaScript)</a></p>
+      <p id="NodeJS"><strong><small>NodeJS</strong> <sup>7</sup>: O Node.js pode ser definido como um ambiente de execução Javascript server-side. Isso significa que com o Node.js é possível criar aplicações Javascript para rodar como uma aplicação standalone em uma máquina, não dependendo de um browser para a execução, como estamos acostumados.</small><a href="https://www.opus-software.com.br/node-js/#" target="_blank">https://www.opus-software.com.br/node-js/#</a></p>
+      <p><strong><small>Arquivo de Marcação: </small></strong><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/markup#:~:text=Uma%20linguagem%20de%20marca%C3%A7%C3%A3o%20%C3%A9,objetivo%20dessa%20parte%20do%20conte%C3%BAdo." target="_blank">https://developer.mozilla.org/pt-BR/docs/Glossary/markup#:~:text=Uma%20linguagem%20de%20marca%C3%A7%C3%A3o%20%C3%A9,objetivo%20dessa%20parte%20do%20conte%C3%BAdo.</a></p>
+      <p id="Visual-Studio-Code"><strong><small>Visual Studio Code</strong> <sup>8</sup>: O Visual Studio Code (VS Code) é um editor de código de código aberto desenvolvido pela Microsoft.</small><a href="https://www.treinaweb.com.br/blog/vs-code-o-que-e-e-por-que-voce-deve-usar" target="_blank">https://www.treinaweb.com.br/blog/vs-code-o-que-e-e-por-que-voce-deve-usar</a></p>
+      <p id="Google-Chrome"><strong><small>Google Chrome</strong> <sup>9</sup>: Google Chrome é um dos mais populares navegadores disponível para Windows, Mac (Mac OS), Linux (Ubuntu), Android e iOS, mas não possui versão para Windows Phone. Como seu nome deixa claro, o browser é desenvolvido pelo Google, é grátis e tem versão em Português.</small><a href="https://www.techtudo.com.br/tudo-sobre/google-chrome/" target="_blank">https://www.techtudo.com.br/tudo-sobre/google-chrome/</a></p>
+    </body>
+</html>
